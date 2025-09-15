@@ -1,10 +1,16 @@
-#include <iostream>
-
+#include "functions.h"
 using namespace std;
 
 int main(){
 
-    cout << "hello world!" << endl;
+    string filename;
+
+    cout << "Enter filename to perform operations on: ";
+    cin >> filename;
+
+    cout << "Debugging: " << filename << endl;
+
+    readFile(filename);
 
     return 0;
 }
