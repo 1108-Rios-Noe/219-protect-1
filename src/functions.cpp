@@ -17,7 +17,6 @@ void readFile(const string &filename){
 
             if(operation == "NOT" || operation == "not"){
                 file >> hex1;
-                
             }else {
 
             }
@@ -73,4 +72,8 @@ void lslOperation(uint32_t &num1, uint32_t &numToShift){
 }
 void lsrOperation(uint32_t &num1, uint32_t &numToShift){
 
+}
+bool isValidOp(const string &op){
+    const string validOps[] = {"NOT", "AND", "OR", "XOR", "ADD", "SUB", "EQ", "LT", "GT", "LSL", "LSR", "not", "and", "or", "xor", "add", "sub", "eq", "lt", "gt", "lsl", "lsr"};
+    
 }

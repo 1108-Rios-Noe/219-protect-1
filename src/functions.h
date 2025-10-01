@@ -20,5 +20,6 @@ void ltOperation(uint32_t &num1, uint32_t &num2);
 void gtOperation(uint32_t &num1, uint32_t &num2);
 void lslOperation(uint32_t &num1, uint32_t &numToShift);
 void lsrOperation(uint32_t &num1, uint32_t &numToShift);
+bool isValidOp(const string &op);
 
 #endif // FUNCTIONS_H
