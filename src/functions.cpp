@@ -10,9 +10,27 @@ void readFile(const string &filename){
         
         string operation;
         string hex1, hex2;
+        int line = 0; //FOR DEBUGGING
 
-        while(file >> operation >> hex1 >> hex2){
-            cout << "Operation: " << operation << " Hex1: " << hex1 << " Hex2: " << hex2 << endl;
+        while(file >> operation){
+            line++; //FOR DEBUGGING
+
+            if(operation == "NOT" || operation == "not"){
+                file >> hex1;
+                
+            }else {
+
+            }
+            
+
+            file >> hex1 >> hex2;
+            uint32_t num1 = stoi(hex1, nullptr, 16);
+            uint32_t num2 = stoi(hex2, nullptr, 16);
+
+            //FOR DEBUGGING
+            cout << "Line: " << line << " Operation: " << operation << " Hex1: " << hex1 << " Hex2: " << hex2 << endl;
+            cout << "Num1: " << num1 << " Num2: " << num2 << " ADD: " << num1 + num2 << " Hex: 0x" << hex << num1+num2 << endl;
+
         }
 
         cout << "END OF FILE" << endl;
@@ -21,4 +39,38 @@ void readFile(const string &filename){
         cout << "Error opening file: " << filename << endl;
         exit(1); //exit with 1 to represent that the program has failed at a certain point somewhere
     }
+}
+
+void notOperation(uint32_t &num){
+
+}
+void andOperation(uint32_t &num1, uint32_t &num2){
+
+}
+void orOperation(uint32_t &num1, uint32_t &num2){
+
+}
+void xorOperation(uint32_t &num1, uint32_t &num2){
+
+}
+void addOperation(uint32_t &num1, uint32_t &num2){
+
+}
+void subOperation(uint32_t &num1, uint32_t &num2){
+
+}
+void eqOperation(uint32_t &num1, uint32_t &num2){
+
+}
+void ltOperation(uint32_t &num1, uint32_t &num2){
+
+}
+void gtOperation(uint32_t &num1, uint32_t &num2){
+
+}
+void lslOperation(uint32_t &num1, uint32_t &numToShift){
+
+}
+void lsrOperation(uint32_t &num1, uint32_t &numToShift){
+
 }
