@@ -17,8 +17,12 @@ void readFile(const string &filename){
 
             if(operation == "NOT" || operation == "not"){
                 file >> hex1;
+                uint32_t num1 = stoi(hex1, nullptr, 16);
+                if(num1 > 0){
+                    notOperation(num1);
+                }else cout << "Error: Not operation requires a positive value" << endl;
             }else {
-
+                
             }
             
 
