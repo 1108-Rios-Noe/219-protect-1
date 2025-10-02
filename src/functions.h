@@ -21,5 +21,8 @@ void gtOperation(uint32_t &num1, uint32_t &num2);
 void lslOperation(uint32_t &num1, uint32_t &numToShift);
 void lsrOperation(uint32_t &num1, uint32_t &numToShift);
 bool isValidOp(const string &op);
+bool callOperation(string &operation, uint32_t &num1, uint32_t &num2);
+bool isValidHex(string &hex);
+bool formatHex(string &hex);
 
 #endif // FUNCTIONS_H

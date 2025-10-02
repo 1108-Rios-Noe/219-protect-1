@@ -1,3 +1,5 @@
+//NOE RIOS
+
 #include "functions.h"
 using namespace std;
 
@@ -8,7 +10,7 @@ int main(){
     cout << "Enter filename to perform operations on: ";
     cin >> filename;
 
-    cout << "Debugging: " << filename << endl;
+    /* cout << "Debugging: " << filename << endl; */
 
     readFile(filename);
 
