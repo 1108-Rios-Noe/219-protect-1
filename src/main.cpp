@@ -4,14 +4,12 @@
 using namespace std;
 
 int main(){
-
+    //get input filename, then look for this file and try and read it
     string filename;
 
     cout << "Enter filename to perform operations on: ";
     cin >> filename;
-
-    /* cout << "Debugging: " << filename << endl; */
-
+    //read the file and perform operations
     readFile(filename);
 
     return 0;
