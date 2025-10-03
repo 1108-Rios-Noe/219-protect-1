@@ -8,6 +8,7 @@
 
 using namespace std;
 
+//all the function prototypes that help perform the operations and become a dynamic project
 void readFile(const string &filename);
 void notOperation(uint32_t &num);
 void andOperation(uint32_t &num1, uint32_t &num2);
